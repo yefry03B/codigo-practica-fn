@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portafolio — Yefri Beras</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+<ul>
+<li><a href="#inicio" class="active">Inicio</a></li>
+<li><a href="#sobre-mi">Sobre mi</a></li>
+<li><a href="#curriculum">Currículum</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="inicio" class="hero">
+<div class="hero-content">
+<h1>Eleva tus Juegos <span>con un desarrollador de alto nivel</span>!</h1>
+<p class="intro">
+¡Hola! Soy <strong>Yefri Beras</strong>,
+especializado en Python y Java Script. Ayudo a pequeñas empresas y desarrolladores
+a llevar a cabo sus ideas.
+</p>
+<h2 class="redes-titulo">Accede a mis redes sociales:</h2>
+<div class="socials">
+<a class="btn social instagram" href="#" target="_blank" rel="noopener">
+<span class="icon"> </span> Instagram
+</a>
+<a class="btn social github" href="#" target="_blank" rel="noopener">
+<span class="icon"> </span> GitHub
+</a>
+<a class="btn social linkedin" href="#" target="_blank" rel="noopener">
+<span class="icon"> </span> LinkedIn
+</a>
+</div>
+</div>
+<div class="hero-photo">
+<!-- Reemplaza profile.jpg por tu foto -->
+<img src="img/WhatsApp Image 2025-11-18 at 6.09.57 PM.jpeg" alt="Foto de Tu Nombre" />
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-bar">
+<p>Desarrollado por <strong>Yefri Beras</strong></p>
+</div>
+</footer>
+</body>
+código
+ New Section 1 Page 1
+</body>
+</html>
+/* Reset sencillo */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: Inter, "Segoe UI", Roboto, Arial, sansserif; }
+/* Colores */
+:root{
+--bg: #0b0b0b;
+--accent: #00d1ff; /* cian */
+--text: #e9eef0;
+--muted: #a8b0b5;
+}
+/* Header / Nav */
+.site-header {
+background: linear-gradient(180deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8));
+position: sticky;
+top: 0;
+z-index: 20;
+}
+.nav {
+max-width: 1200px;
+margin: 0 auto;
+padding: 14px 20px;
+}
+.nav ul { list-style: none; display: flex; gap: 20px; align-items:center; }
+.nav a {
+color: var(--accent);
+text-decoration: none;
+font-weight: 600;
+padding: 6px 8px;
+}
+.nav a.active { text-decoration: underline 2px; }
+/* Hero layout */
+.hero {
+display: grid;
+grid-template-columns: 1fr 420px;
+gap: 30px;
+align-items: center;
+background: var(--bg);
+color: var(--text);
+padding: 48px 20px;
+min-height: calc(100vh - 72px);
+max-width: 1200px;
+margin: 0 auto;
+}
+/* Contenido izquierdo */
+ New Section 1 Page 2
+/* Contenido izquierdo */
+.hero-content h1 {
+font-size: 26px;
+line-height: 1.2;
+margin-bottom: 14px;
+}
+.hero-content h1 span {
+color: var(--accent);
+font-weight: 700;
+}
+.intro {
+color: var(--muted);
+margin-bottom: 26px;
+font-size: 15px;
+max-width: 640px;
+}
+/* Redes */
+.redes-titulo {
+margin-bottom: 12px;
+font-size: 18px;
+color: var(--text);
+}
+.socials { display: flex; flex-direction: column; gap: 12px; width: 320px; maxwidth: 100%; }
+.btn {
+display: inline-flex;
+align-items: center;
+gap: 12px;
+padding: 12px 18px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 700;
+transition: transform .14s ease, box-shadow .14s ease;
+border: 2px solid rgba(0,0,0,0.2);
+}
+/* social styles */
+.social {
+background: transparent;
+color: var(--text);
+border: 2px solid rgba(0,0,0,0.3);
+position: relative;
+box-shadow: 0 0 0 2px rgba(0,0,0,0.0) inset;
+}
+.social .icon { font-size: 18px; }
+/* individual accent outlines */
+.instagram { border-color: rgba(0,0,0,0.25); }
+.github { border-color: rgba(0,0,0,0.25); }
+.linkedin { border-color: rgba(0,0,0,0.25); }
+/* Hover effects */
+.social:hover {
+transform: translateY(-4px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+outline: 3px solid rgba(0,209,255,0.12);
+}
+/* Foto derecha */
+.hero-photo {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 8px;
+ New Section 1 Page 3
+padding: 8px;
+}
+.hero-photo img {
+width: 100%;
+max-width: 420px;
+height: auto;
+object-fit: cover;
+border: 6px solid #fff;
+border-radius: 6px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+/* Footer bar */
+.site-footer .footer-bar {
+background: var(--accent);
+text-align: center;
+padding: 12px 20px;
+color: #041018;
+font-weight: 700;
+}
+/* Responsive */
+@media (max-width: 880px) {
+.hero { grid-template-columns: 1fr; padding: 30px 16px; gap: 26px; min-height:
+auto; }
+.socials { width: 100%; }
+.hero-photo img { max-width: 320px; margin: 0 auto; }
+.nav ul { gap: 12px; justify-content: center; }
+}
